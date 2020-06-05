@@ -1,0 +1,14 @@
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\ConceptBiotech.Data.dll.config
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\ConceptBiotech.Data.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\ConceptBiotech.Data.pdb
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\ConceptBiotech.UIEntity.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\EntityFramework.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\EntityFramework.SqlServer.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\ConceptBiotech.UIEntity.pdb
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\EntityFramework.xml
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\bin\Release\EntityFramework.SqlServer.xml
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\obj\Release\ConceptBiotech.Data.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\obj\Release\ConceptBiotech.Data.pdb
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\obj\Release\ConceptBiotech.Data.csprojAssemblyReference.cache
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\obj\Release\ConceptBiotech.Data.csproj.CopyComplete
+E:\Company Project\ConceptBiotech\ConceptBiotech.Data\obj\Release\ConceptBiotech.Data.csproj.CoreCompileInputs.cache

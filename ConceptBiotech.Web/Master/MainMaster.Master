@@ -1,0 +1,368 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="ConceptBiotech.Web.Master.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Concept Biotech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="../CSS/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Pace -->
+    <link href="../CSS/pace.css" rel="stylesheet" />
+
+    <!-- Morris -->
+    <link href="../CSS/morris.css" rel="stylesheet" />
+
+    <!-- Endless -->
+    <link href="../CSS/endless.min.css" rel="stylesheet" />
+    <link href="../CSS/endless-skin.css" rel="stylesheet" />
+
+    <!--Autocomplete -->
+    <link href="../CSS/jquery-ui.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body class="overflow-hidden">
+    <!-- Overlay Div -->
+    <div id="overlay" class="transparent"></div>
+    <div id="wrapper" class="preload">
+        <div id="top-nav" class="fixed skin-6">
+            <a href="#" class="brand">
+                <span>
+                    <img src="../Images/Conceptbiotechlogo.jpeg" height="40" /></span>
+            </a>
+            <!-- /brand -->
+            <button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle pull-left hide-menu" id="menuToggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <span class="text-center" style="color: #ccc; padding-left: 350px;font-size: large; text-shadow: 0 1px #fff">ORDER MONITORING SYSTEM</span>
+
+
+            <ul class="nav-notification clearfix">
+                <li class="profile dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <strong>
+                            <asp:Label ID="lblWelcome" runat="server"></asp:Label></strong>
+                        <span><i class="fa fa-chevron-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="clearfix" href="#">
+                                <img src="../Images/user.png" alt="User Avatar">
+                                <div class="detail">
+                                    <strong><%:Session["EmployeeName"]%></strong>
+                                    <%--<p class="grey">aiyubmaster@yahoo.co.uk</p>--%>
+                                </div>
+                            </a>
+                        </li>
+                        <%-- <li><a tabindex="-1" href="profile.html" class="main-link"><i class="fa fa-edit fa-lg"></i>Edit profile</a></li>
+                        <li><a tabindex="-1" href="gallery.html" class="main-link"><i class="fa fa-picture-o fa-lg"></i>Photo Gallery</a></li>
+                        <li><a tabindex="-1" href="#" class="theme-setting"><i class="fa fa-cog fa-lg"></i>Setting</a></li>--%>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" class="main-link logoutConfirm_open" href="#logoutConfirm"><i class="fa fa-lock fa-lg"></i>Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /top-nav-->
+
+        <aside class="fixed skin-6">
+            <div class="sidebar-inner scrollable-sidebar">
+                <div class="size-toggle">
+                    <a class="btn btn-sm" id="sizeToggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="btn btn-sm pull-right logoutConfirm_open" href="#logoutConfirm">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <!-- /size-toggle -->
+                <div class="user-block clearfix">
+                    <img src="../Images/user.png" alt="User Avatar">
+                    <div class="detail" style="margin-top: 8%">
+                        <strong><%:Session["EmployeeName"]%></strong>
+                    </div>
+                </div>
+                <!-- /user-block -->
+                <div class="main-menu" id="cssmenu" runat="server" style="height: 80%; scrollbar-base-color: white; overflow: auto;">
+                    <ul>
+                        <li class="active">
+                            <a href="../ClientUI/Dashboard.aspx">
+                                <span class="menu-icon">
+                                    <i class="fa fa-desktop fa-lg"></i>
+                                </span>
+                                <span class="text">Dashboard
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                        </li>
+                        <li class="openable open">
+                            <a href="#" id="liMaster" runat="server">
+                                <span class="menu-icon">
+                                    <i class="fa fa-file-text fa-lg"></i>
+                                </span>
+                                <span class="text">Masters
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li id="Product_Master" runat="server"><a href="../ClientUI/Products.aspx"><span class="submenu-label">Product</span></a></li>
+                                <li id="User" runat="server"><a href="../ClientUI/User.aspx"><span class="submenu-label">Mobile App User</span></a></li>
+                                <%--<li id="Branch_Master" runat="server" visible="False"><a href="../ClientUI/Branch.aspx"><span class="submenu-label">Branch</span></a></li>
+                                <li id="Customer_Master" runat="server" visible="False"><a href="../ClientUI/Client.aspx"><span class="submenu-label">Customer</span></a></li>
+                                <li id="Customer_Type_Master" runat="server" visible="False"><a href="../ClientUI/ClientType.aspx"><span class="submenu-label">Customer Type</span></a></li>
+                                <li id="MaterialGroup_Master" runat="server" visible="False"><a href="../ClientUI/MaterialGroup.aspx"><span class="submenu-label">Material Group</span></a></li>
+                                <li id="Material_Master" runat="server" visible="False"><a href="../ClientUI/Material.aspx"><span class="submenu-label">Material</span></a></li>
+                                <li id="Employee_Master" runat="server" visible="False"><a href="../ClientUI/Employee.aspx"><span class="submenu-label">Employee</span></a></li>
+                                <li id="Organisation_Master" runat="server" visible="False"><a href="../ClientUI/Organisation.aspx"><span class="submenu-label">Organisation</span></a></li>
+                                <li id="Role_Master" runat="server" visible="False"><a href="../ClientUI/Role.aspx"><span class="submenu-label">Role</span></a></li>
+                                <li id="Ref_Person_Master" runat="server" visible="False"><a href="../ClientUI/RefPerson.aspx"><span class="submenu-label">Reference Person</span></a></li>
+                                <li id="Unit_Master" runat="server" visible="False"><a href="../ClientUI/Unit.aspx"><span class="submenu-label">Unit</span></a></li>
+                                <li id="Unit_Category_Master" runat="server" visible="False"><a href="../ClientUI/UnitCategory.aspx"><span class="submenu-label">UnitCategory</span></a></li>
+                                <li id="Supplier_Master" runat="server" visible="False"><a href="../ClientUI/Vendor.aspx"><span class="submenu-label">Supplier</span></a></li>
+                                <li id="Inquiry_Master" runat="server" visible="False"><a href="../ClientUI/Inquiry.aspx"><span class="submenu-label">Inquiry</span></a></li>
+                                <li id="Manufacturer_Master" runat="server" visible="False"><a href="../ClientUI/Manufacturer.aspx"><span class="submenu-label">Manufacturer</span></a></li>
+                                <li id="RoleRights_Master" runat="server" visible="False"><a href="../ClientUI/Rights.aspx"><span class="submenu-label">Role Rights</span></a></li>--%>
+                            </ul>
+                        </li>
+                        <%--<li class="openable open">
+                            <a href="#" id="liTransaction" runat="server">
+                                <span class="menu-icon">
+                                    <i class="fa fa-gbp fa-lg"></i>
+                                </span>
+                                <span class="text">Transaction
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li id="PurchaseInvoice" runat="server" visible="False"><a href="../ClientUI/PurchaseInvoice.aspx"><span class="submenu-label">Purchase Invoice</span></a></li>
+                                <li id="MaterialReturn" runat="server" visible="False"><a href="../ClientUI/MaterialReturn.aspx"><span class="submenu-label">Material Return</span></a></li>
+                                <li id="Invoice" runat="server" visible="False"><a href="../ClientUI/Bill.aspx"><span class="submenu-label">Invoice</span></a></li>
+                                <li id="CostInvoice" runat="server" visible="False"><a href="../ClientUI/CostInvoice.aspx"><span class="submenu-label">Cost Invoice</span></a></li>
+                                <li id="PayIn" runat="server" visible="False"><a href="../ClientUI/PayIn.aspx"><span class="submenu-label">PayIn</span></a></li>
+                                <li id="PayOut" runat="server" visible="False"><a href="../ClientUI/PayOut.aspx"><span class="submenu-label">PayOut</span></a></li>
+                                <li id="SimStockOut" runat="server" visible="False"><a href="../ClientUI/SimStockOut.aspx"><span class="submenu-label">Stock Out</span></a></li>
+                                <li id="SimStockReturn" runat="server" visible="False"><a href="../ClientUI/SimStockReturn.aspx"><span class="submenu-label">Stock Return</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="openable open">
+                            <a href="#" id="A1" runat="server">
+                                <span class="menu-icon">
+                                    <i class="fa fa-gbp fa-lg"></i>
+                                </span>
+                                <span class="text">SimCard
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li id="Networks_Master" runat="server" visible="False"><a href="../ClientUI/Networks.aspx"><span class="submenu-label">Networks</span></a></li>
+                                <li id="Templates" runat="server" visible="False"><a href="../ClientUI/Templates.aspx"><span class="submenu-label">Templates</span></a></li>
+                                <li id="CustomerProductTemplates" runat="server" visible="False"><a href="../ClientUI/CustomerProductTemplates.aspx"><span class="submenu-label">CustomerProductTemplates</span></a></li>
+                                <li id="EmployeeProductTemplate" runat="server" visible="False"><a href="../ClientUI/EmployeeProductTemplate.aspx"><span class="submenu-label">Employee Templates</span></a></li>
+                                <li id="StockInMaterials" runat="server" visible="False"><a href="#"><span class="submenu-label">StockInMaterials</span></a></li>
+                                <li id="StockOutMatterial" runat="server" visible="False"><a href="#"><span class="submenu-label">StockOutMatterial</span></a></li>
+                                <li id="Stock" runat="server" visible="False"><a href="#"><span class="submenu-label">Stock</span></a></li>
+                                <li id="SIMCardActivation" runat="server" visible="False"><a href="../ClientUI/SIMCardActivation.aspx"><span class="submenu-label">SIMCardActivation</span></a></li>
+                                <li id="Supplier" runat="server" visible="False"><a href="../ClientUI/Supplier.aspx"><span class="submenu-label">Supplier</span></a></li>
+                                <li id="Product" runat="server" visible="False"><a href="../ClientUI/Products.aspx"><span class="submenu-label">Product</span></a></li>
+                                <li id="CommisionType" runat="server" visible="False"><a href="../ClientUI/CommisionType.aspx"><span class="submenu-label">Commission Type</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="openable open">
+                            <a href="#" id="liReport" runat="server">
+                                <span class="menu-icon">
+                                    <i class="fa fa-tasks fa-lg"></i>
+                                </span>
+                                <span class="text">Master Reports
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li id="Customer_Report" runat="server" visible="False"><a href="../ReportUI/ClientReport.aspx"><span class="submenu-label">Customer Report</span></a></li>
+                                <li id="Vendor_Report" runat="server" visible="False"><a href="../ReportUI/VendorReport.aspx"><span class="submenu-label">Supplier Report</span></a></li>
+                                <li id="Material_Report" runat="server" visible="False"><a href="../ReportUI/MaterialReport.aspx"><span class="submenu-label">Material Report</span></a></li>
+                                <li id="SupplierWise_PurchaseBill_Report" runat="server" visible="False"><a href="../ReportUI/SupplierWise_PurchaseBill_Report.aspx"><span class="submenu-label">Supplier Wise PO Report</span></a></li>
+                                <li id="StockReport" runat="server" visible="False"><a href="../ReportUI/StockReport.aspx"><span class="submenu-label">Inward Stock Report</span></a></li>
+                                <li id="VATReport" runat="server" visible="False"><a href="../ReportUI/VATReport.aspx"><span class="submenu-label">VAT Report</span></a></li>
+                                <li id="CurrentStockReport" runat="server" visible="false"><a href="../ReportUI/CurrentStockReport.aspx"><span class="submenu-label">Current Stock Report</span></a></li>
+                                <li id="AddressLabelReport" runat="server" visible="false"><a href="../ReportUI/AddressLabelReport.aspx"><span class="submenu-label">Address Label Report</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="openable open">
+                            <a href="#" id="liReportTransaction" runat="server">
+                                <span class="menu-icon">
+                                    <i class="fa fa-tasks fa-lg"></i>
+                                </span>
+                                <span class="text">Transaction Reports
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+                                <li id="ClientWiseBillReport" runat="server" visible="false"><a href="../ReportUI/ClientWiseBillReport.aspx"><span class="submenu-label">Client Wise Bill Report</span></a></li>
+                                <li id="DateWiseMaterialBillReport" runat="server" visible="false"><a href="../ReportUI/DateWiseMaterialBillReport.aspx"><span class="submenu-label">Date Wise Bill Report</span></a></li>
+                                <li id="MaterialReturnReport" runat="server" visible="False"><a href="../ReportUI/MaterialReturnReport.aspx"><span class="submenu-label">Material Return Report</span></a></li>
+                                <li id="CancleBillReport" runat="server" visible="false"><a href="../ReportUI/CancleBillReport.aspx"><span class="submenu-label">Cancel Bill Report</span></a></li>
+                                <li id="SalesReport" runat="server" visible="false"><a href="../ReportUI/SalesReport.aspx"><span class="submenu-label">Sales Report</span></a></li>
+                                <li id="PayInReport" runat="server" visible="false"><a href="../ReportUI/PayInReport.aspx"><span class="submenu-label">PayIn Report</span></a></li>
+                                <li id="PayOutReport" runat="server" visible="false"><a href="../ReportUI/PayOutReport.aspx"><span class="submenu-label">PayOut Report</span></a></li>
+                                <li id="CostInvoiceReport" runat="server" visible="false"><a href="../ReportUI/CostInvoiceReport.aspx"><span class="submenu-label">Cost Invoice Report</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="openable open">
+                            <a href="#" id="A2" runat="server">
+                                <span class="menu-icon">
+                                    <i class="fa fa-tasks fa-lg"></i>
+                                </span>
+                                <span class="text">SimCard Reports
+                                </span>
+                                <span class="menu-hover"></span>
+                            </a>
+                            <ul class="submenu">
+
+                                <li id="StockDetails" runat="server" visible="false"><a href="../ReportUI/StockDetails.aspx"><span class="submenu-label">Stock Details</span></a></li>
+                                <li id="EmployeeStockOutReport" runat="server" visible="false"><a href="../ReportUI/EmployeeStockOutReport.aspx"><span class="submenu-label">Employee's StockOut</span></a></li>
+                                <li id="SimCardActivationReport" runat="server" visible="false"><a href="../ReportUI/SimCardActivationReport.aspx"><span class="submenu-label">SimCard Activation Report</span></a></li>
+                                <li id="PurchaseInvoiceReport" runat="server" visible="false"><a href="../ReportUI/PurchaseInvoiceReport.aspx"><span class="submenu-label">PurchaseInvoice Report</span></a></li>
+                                <li id="PurchaseInvoiceDatewiseReport" runat="server" visible="false"><a href="../ReportUI/PurchaseInvoiceDatewiseReport.aspx"><span class="submenu-label">PurchaseInvoice Datewise Report</span></a></li>
+                                <li id="SimStockOutReport" runat="server" visible="false"><a href="../ReportUI/SimStockOutReport.aspx"><span class="submenu-label">SimStockOut Report</span></a></li>
+                                <li id="SimStockOutReturnReport" runat="server" visible="false"><a href="../ReportUI/SimStockOutReturnReport.aspx"><span class="submenu-label">SimStockOut Return Report</span></a></li>
+                                <li id="SimSearch" runat="server" visible="false"><a href="../ReportUI/SimSearch.aspx"><span class="submenu-label">SimCard Search</span></a></li>
+                                <li id="SelfBillingInvoice" runat="server" visible="false"><a href="../ReportUI/SelfBillingInvoiceReport.aspx"><span class="submenu-label">Self Billing Invoice</span></a></li>
+                                <li id="CustomerPayInReport" runat="server" visible="false"><a href="../ReportUI/CustomerPayInReport.aspx"><span class="submenu-label">Customer PayIn Report</span></a></li>
+                                <li id="CustomerWiseActivationReport" runat="server" visible="false"><a href="../ReportUI/CustomerWiseActivationReport.aspx"><span class="submenu-label">Customer Report</span></a></li>
+                                <li id="MultiCustomerSelfBillingInvoiceReport" runat="server" visible="false"><a href="../ReportUI/MultiCustomerSelfBillingInvoiceReport.aspx"><span class="submenu-label">MultiCustomer SelfBilling Invoice Report</span></a></li>
+                                <li id="SupplierPayOutReport" runat="server" visible="false"><a href="../ReportUI/SupplierPayOutReport.aspx"><span class="submenu-label">Supplier PayOut Report</span></a></li>
+                                <li id="EmployeeSelfBillingReport" runat="server" visible="false"><a href="../ReportUI/SelfBillingEmployeeReport.aspx"><span class="submenu-label">Employee Activation Report</span></a></li>
+                                <li id="BillingTransaction" runat="server" visible="false"><a href="../ReportUI/BillingTransaction.aspx"><span class="submenu-label">Billing Transaction</span></a></li>
+                                <li id="DynamicBillingReport" runat="server" visible="false"><a href="../ReportUI/DynamicBillingReport.aspx"><span class="submenu-label">Dynamic Billing Transaction</span></a></li>
+                            </ul>
+                        </li>--%>
+                    </ul>
+                </div>
+                <!-- /main-menu -->
+            </div>
+            <!-- /sidebar-inner -->
+        </aside>
+        <div class="padding-md">
+        </div>
+        <form id="MainForm" runat="server">
+            <div id="main-container">
+                <div class="main-header clearfix">
+                    <asp:ContentPlaceHolder ID="MainBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </form>
+        <div class="padding-md">
+        </div>
+        <div class="padding-md">
+        </div>
+        <!-- /main-container -->
+        <!-- Footer
+		================================================== -->
+        <footer>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="no-margin">
+                        &copy; 2020 <strong>Concept BioTech</strong>. ALL Rights Reserved. 
+				
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="nav navbar-nav navbar-right">
+                        <a href="http://garimasystem.com/" target="_blank">Powered By :
+						    <img src="../Images/garimalogo.gif" /></a>
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row-->
+        </footer>
+    </div>
+    <!-- /wrapper -->
+    <!-- Logout confirmation -->
+    <div class="custom-popup width-100" id="logoutConfirm">
+        <div class="padding-md">
+            <h4 class="m-top-none">Do you want to logout?</h4>
+        </div>
+
+        <div class="text-center">
+            <a class="btn btn-success m-right-sm" href="../Default.aspx">Logout</a>
+            <a class="btn btn-danger logoutConfirm_close">Cancel</a>
+        </div>
+    </div>
+    <link href="../CSS/bootstrap-datepicker3.css" rel="stylesheet" />
+
+    <!-- Jquery -->
+    <script src="../JS/jquery-1.10.2.min.js"></script>
+    <script src="../JS/jquery.quicksearch.js"></script>
+    <script src="../JS/bootstrap-datepicker.min.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+
+    <script src="../Codejs/datePicker.js"></script>
+
+    <script src="../JS/CommonFunction.js"></script>
+
+    .
+
+    <!-- Bootstrap -->
+    <script src="../JS/bootstrap/bootstrap.js"></script>
+
+    <!-- Pace -->
+    <script src="../JS/uncompressed/pace.js"></script>
+
+    <!-- Popup Overlay -->
+    <script src="../JS/jquery.popupoverlay.min.js"></script>
+
+    <!-- Slimscroll -->
+    <script src="../JS/jquery.slimscroll.min.js"></script>
+
+    <!-- Modernizr -->
+    <script src="../JS/modernizr.min.js"></script>
+
+    <!-- Cookie -->
+    <script src="../JS/jquery.cookie.min.js"></script>
+
+    <!-- Endless -->
+    <script src="../JS/endless/endless.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).on("keydown", function (e) {
+            if (e.which === 8 && !$(e.target).is("input, textarea")) {
+                e.preventDefault();
+            }
+        });
+        $(document).ready(function () {
+            function disableBack() { window.history.forward() }
+            window.onload = disableBack();
+            window.onpageshow = function (evt) { if (evt.persisted) disableBack() }
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="ScriptDeclaration" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

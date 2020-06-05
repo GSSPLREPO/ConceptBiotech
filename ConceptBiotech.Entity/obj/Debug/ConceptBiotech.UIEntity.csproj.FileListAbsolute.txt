@@ -1,0 +1,6 @@
+E:\Company Project\ConceptBiotech\ConceptBiotech.Entity\bin\Debug\ConceptBiotech.UIEntity.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Entity\bin\Debug\ConceptBiotech.UIEntity.pdb
+E:\Company Project\ConceptBiotech\ConceptBiotech.Entity\obj\Debug\ConceptBiotech.UIEntity.dll
+E:\Company Project\ConceptBiotech\ConceptBiotech.Entity\obj\Debug\ConceptBiotech.UIEntity.pdb
+E:\Company Project\ConceptBiotech\ConceptBiotech.Entity\obj\Debug\ConceptBiotech.UIEntity.csproj.CoreCompileInputs.cache
+E:\Company Project\ConceptBiotech\ConceptBiotech.Entity\obj\Debug\ConceptBiotech.UIEntity.csprojAssemblyReference.cache

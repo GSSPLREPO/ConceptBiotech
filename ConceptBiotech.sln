@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptBiotech.Data", "ConceptBiotech.Data\ConceptBiotech.Data.csproj", "{2D0E0EDF-6A32-41B6-A7DC-D70E9697ADF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptBiotech.UIEntity", "ConceptBiotech.Entity\ConceptBiotech.UIEntity.csproj", "{2A82FD96-1FFC-4118-B442-13E3A00DC613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptBiotech.Business", "ConceptBiotech.Business\ConceptBiotech.Business.csproj", "{E142CDBD-A9C2-4135-BA57-17B8E3F37F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptBiotech.WebAPI", "ConceptBiotech.WebAPI\ConceptBiotech.WebAPI.csproj", "{F349D90D-CCC0-4A63-BAF6-DF9234EC302A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptBiotech.Web", "ConceptBiotech.Web\ConceptBiotech.Web.csproj", "{7B4326A4-1B30-4772-902E-867121C43D16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConceptBiotech.BL", "ConceptBiotech.BL\ConceptBiotech.BL.csproj", "{709680DB-5F03-4220-A51F-D7083B1A174D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D0E0EDF-6A32-41B6-A7DC-D70E9697ADF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0E0EDF-6A32-41B6-A7DC-D70E9697ADF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0E0EDF-6A32-41B6-A7DC-D70E9697ADF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0E0EDF-6A32-41B6-A7DC-D70E9697ADF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A82FD96-1FFC-4118-B442-13E3A00DC613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A82FD96-1FFC-4118-B442-13E3A00DC613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A82FD96-1FFC-4118-B442-13E3A00DC613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A82FD96-1FFC-4118-B442-13E3A00DC613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E142CDBD-A9C2-4135-BA57-17B8E3F37F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E142CDBD-A9C2-4135-BA57-17B8E3F37F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E142CDBD-A9C2-4135-BA57-17B8E3F37F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E142CDBD-A9C2-4135-BA57-17B8E3F37F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F349D90D-CCC0-4A63-BAF6-DF9234EC302A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F349D90D-CCC0-4A63-BAF6-DF9234EC302A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F349D90D-CCC0-4A63-BAF6-DF9234EC302A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F349D90D-CCC0-4A63-BAF6-DF9234EC302A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4326A4-1B30-4772-902E-867121C43D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4326A4-1B30-4772-902E-867121C43D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4326A4-1B30-4772-902E-867121C43D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4326A4-1B30-4772-902E-867121C43D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709680DB-5F03-4220-A51F-D7083B1A174D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709680DB-5F03-4220-A51F-D7083B1A174D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709680DB-5F03-4220-A51F-D7083B1A174D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709680DB-5F03-4220-A51F-D7083B1A174D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\ConceptWebpublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>06/18/2018 13:00:14</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.pdb">
+      <publishTime>06/18/2018 13:00:14</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.BL.dll">
+      <publishTime>04/06/2020 23:11:00</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.BL.pdb">
+      <publishTime>04/06/2020 23:11:00</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Business.dll">
+      <publishTime>04/06/2020 23:10:59</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Business.dll.config">
+      <publishTime>08/19/2019 07:56:54</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Business.pdb">
+      <publishTime>04/06/2020 23:10:59</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Data.dll">
+      <publishTime>04/06/2020 23:10:55</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Data.dll.config">
+      <publishTime>07/25/2019 23:23:54</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Data.pdb">
+      <publishTime>04/06/2020 23:10:55</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.UIEntity.dll">
+      <publishTime>06/04/2020 09:49:26</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.UIEntity.pdb">
+      <publishTime>06/04/2020 09:49:26</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Web.dll">
+      <publishTime>06/04/2020 23:23:22</publishTime>
+    </File>
+    <File Include="bin/ConceptBiotech.Web.pdb">
+      <publishTime>06/04/2020 23:23:22</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>12/01/2018 07:34:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>05/15/2018 13:29:52</publishTime>
+    </File>
+    <File Include="ClientUI/Dashboard.aspx">
+      <publishTime>04/06/2020 22:11:40</publishTime>
+    </File>
+    <File Include="ClientUI/Products.aspx">
+      <publishTime>05/31/2020 15:29:39</publishTime>
+    </File>
+    <File Include="ClientUI/User.aspx">
+      <publishTime>06/04/2020 23:23:03</publishTime>
+    </File>
+    <File Include="ClientUI/UserPromotion.aspx">
+      <publishTime>05/31/2020 17:10:32</publishTime>
+    </File>
+    <File Include="Codejs/datePicker.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="CSS/bootstrap-datepicker3.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="CSS/bootstrap.min.css">
+      <publishTime>03/07/2019 11:49:18</publishTime>
+    </File>
+    <File Include="CSS/endless-skin.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="CSS/endless.min.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="CSS/font-awesome.min.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="CSS/jquery-ui.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="CSS/morris.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="CSS/pace.css">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/06/2020 21:27:53</publishTime>
+    </File>
+    <File Include="Fonts/fontawesome-webfont862f.eot">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/fontawesome-webfont862f.svg">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/fontawesome-webfont862f.ttf">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/fontawesome-webfont862f.woff">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/fontawesome-webfontd41d.eot">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/17/2017 15:45:50</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/28/2019 22:05:37</publishTime>
+    </File>
+    <File Include="Images/AA.png">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/adobe.PNG">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/aircall.png">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/approved.ico">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/back-button.png">
+      <publishTime>03/28/2018 14:02:48</publishTime>
+    </File>
+    <File Include="Images/banyantreelogo.gif">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/banyantreelogo.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/BTPLLoginBackground.jpg">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/btts full logo.jpg">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/cancel.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/Conceptbiotechlogo.jpeg">
+      <publishTime>02/06/2020 09:15:45</publishTime>
+    </File>
+    <File Include="Images/delete-1.png">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/Delete.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/download1.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/Edit.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/Email1.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/excel.PNG">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/eye-icon.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/favicon-96x96.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/garimalogo.gif">
+      <publishTime>06/04/2020 21:26:27</publishTime>
+    </File>
+    <File Include="Images/garimalogo.jpeg">
+      <publishTime>02/06/2020 09:15:44</publishTime>
+    </File>
+    <File Include="Images/loading.gif">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/LoginBackScreen.JPG">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/logo1.jpg">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/NoImage-big.jpg">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/print.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/Return.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/revised.png">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/so1.png">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/unauthorised.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/undo.png">
+      <publishTime>10/17/2017 15:45:36</publishTime>
+    </File>
+    <File Include="Images/user.png">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/userRights.gif">
+      <publishTime>10/17/2017 15:45:44</publishTime>
+    </File>
+    <File Include="Images/WebsiteUnderConstruction.gif">
+      <publishTime>10/17/2017 15:45:38</publishTime>
+    </File>
+    <File Include="Images/word.PNG">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/bootstrap-datepicker.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/bootstrap/bootstrap.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/bootstrap/bootstrap.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/CommonFunction.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/Dashboard.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/endless/endless.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/jquery-1.10.2.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/jquery-ui.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/jquery.cookie.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/jquery.popupoverlay.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/jquery.quicksearch.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/jquery.slimscroll.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/modernizr.min.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/ScriptPrint.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="JS/uncompressed/pace.js">
+      <publishTime>10/17/2017 15:45:46</publishTime>
+    </File>
+    <File Include="Master/MainMaster.Master">
+      <publishTime>04/06/2020 21:46:12</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/27/2019 22:28:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/29/2019 01:31:46</publishTime>
+    </File>
+    <File Include="WebMethods/ValidateName.asmx">
+      <publishTime>08/28/2019 23:39:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
